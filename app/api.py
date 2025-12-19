@@ -14,8 +14,6 @@ def get_events(user_name: str) -> dict:
     # Assign response 
     response = requests.get(url, headers=t_headers)
 
-    #print("Status Code:", response.status_code)
-
     if response.ok:
         data = response.json()
         return data
