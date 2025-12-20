@@ -1,5 +1,5 @@
 import argparse
-from app.core_functions import process_events, filter_events
+from app.core.core_functions import  filter_events
 
 
 def main():
@@ -12,8 +12,7 @@ def main():
     
     args = parser.parse_args()
     
-    process_events(args.username)
-    filter_events(args.event_type)
+    filter_events(args.event_type, args.username)
 
     
 
